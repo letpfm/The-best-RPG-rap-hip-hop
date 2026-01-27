@@ -1,5 +1,5 @@
-#include <iostream>
 #include "windows.h"
+#include <iostream>
 #include "GameClasses.h"
 #include "BaseClasses.h"
 #include "Evil.h"
@@ -90,16 +90,12 @@ unique_ptr<Npc> CreateCharacter(CharacterType type)
     {
     case CharacterType::UNKNOWN:
         return make_unique<Npc>();
-        break;
     case CharacterType::WARRIOR:
         return make_unique<Warrior>();
-        break;
     case CharacterType::WIZARD:
         return make_unique<Wizard>();
-        break;
     case CharacterType::PALADIN:
         return make_unique<Paladin>();
-        break;
     default:
         //для генерации исключения при возникновении ошибки
         throw invalid_argument("Неизвестный тип персонажа");

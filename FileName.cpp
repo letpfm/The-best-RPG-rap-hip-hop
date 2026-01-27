@@ -23,9 +23,9 @@ struct Treasure
     string name{ "המבûקא" };
     ValueQuality quality = ValueQuality::ÌÈÔÈ×ÅÑÊÎÅ;
     unsigned int price{ 0 };
-    Treasure(ValueQuality quality)
+    Treasure(ValueQuality q) : quality(q)
     {
-        switch (quality)
+        switch (q)
         {
         case ValueQuality::ÌÓÑÎÐ:
             cout << "ךאקוסעגמ ןכמץמו\n";

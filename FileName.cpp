@@ -47,9 +47,9 @@ struct Treasure
     }
 }; 
 
-struct Cloth : Treasure 
+struct Cloth : Treasure
 {
-    Сloth(ValueQuality quality) : Treasure(quality) {};
+    Cloth(ValueQuality quality) : Treasure(quality) {}
     string valueSite[5]{ "обувь", "перчатки", "шлем", "нагрудник", "пояс" };
     string site{};
     unsigned short armor{ 1 };

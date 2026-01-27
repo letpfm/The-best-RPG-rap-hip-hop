@@ -118,7 +118,7 @@ int main()
     if (TestChoise(2, "Наверное ты ошибся, повтори снова") == 1)
     {
         cout << "Расскажи о своих навыках\n\t1 - Воин\n\t2 - Волшебник\n\t3 - Паладин\n";
-        unique_ptr<Npc> character;
+        unique_ptr<Npc> character = nullptr;
         switch (TestChoise(3, "Такого еще не было в наших краях\nНе мог бы ты повторить"))
         {
             case 1:

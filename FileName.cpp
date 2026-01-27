@@ -131,7 +131,7 @@ int main()
     }
     else
     {
-        ifstream loadSystem("save.txt", ios::binary);
+        ifstream loadSystem("save.bin", ios::binary);
         if (!loadSystem.is_open())
         {
             cout << "Связь с космосом потеряна\nПамять о ваших прошлых путешествиях повреждена\n";

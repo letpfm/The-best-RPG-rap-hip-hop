@@ -24,10 +24,10 @@ int main() {
 
     if (choice == 1) {  // Если выбран новый персонаж
         cout << "Выбери класс:\n1 — Репер\n2 — Поэт\n3 — Программист\n";  // Меню выбора класса
-        int cls;
-        cin >> cls;
+        int x;
+        cin >> x;
 
-        CharacterType type = static_cast<CharacterType>(cls);  // Преобразуем в тип персонажа
+        CharacterType type = static_cast<CharacterType>(x);  // Преобразуем в тип персонажа
         player = CreateCharacter(type);  // Создаем персонажа
 
         cin.ignore();  // Игнорируем остаток ввода

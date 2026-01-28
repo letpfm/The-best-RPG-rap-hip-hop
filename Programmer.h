@@ -9,6 +9,7 @@ private:
     int charisma;
     int creativity;
     int wisdom;
+    int inspiration;
     int logic;
 
 public:
